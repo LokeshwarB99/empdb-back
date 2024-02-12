@@ -79,7 +79,7 @@ app.post("/update", (req, res) => {
 });
 
 
-const PORT = 5000; // Specify the port number you want to use
+const PORT = process.env.PORT || 5000; // Specify the port number you want to use
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
